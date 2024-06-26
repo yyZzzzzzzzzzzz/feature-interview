@@ -4,6 +4,11 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import moment from 'moment';
 
+//  npm install react
+//  npm install react react-dom
+//  由于UI注释链接打不开，只能照着图片写，部分细节可能不够准确
+
+
 const App = () => {
   const [redEnvelopeList, setRedEnvelopeList] = useState<any>([]);
   useEffect(() => {

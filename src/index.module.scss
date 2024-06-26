@@ -35,10 +35,10 @@
         font-weight: 400;
     }
     .centerDiv {
-        width: 40%;
+        width: 50%;
         flex: 1;
         display: flex;
-        width: 195px;
+        // width: 195px;
         height: 100%;
         flex-direction: column;
         justify-content: center;
@@ -74,7 +74,7 @@
         width: 20%;
         margin-right: 16px;
         .button{
-            width: 78px;
+            width: 84px;
             height: 37px;
             border-radius: 50px;
             font-size: 18px;
