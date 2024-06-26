@@ -20,8 +20,8 @@ const App = () => {
   };
 
   // 倒计时
-  const ItemCountdown = ({ restTime }) => {
-    const [timeLeft, setTimeLeft] = useState(restTime);
+  const ItemCountdown = (restTime:any) => {
+    const [timeLeft, setTimeLeft] = useState(restTime?.restTime);
     useEffect(() => {
       if (timeLeft <= 0) {
         return;
@@ -51,7 +51,7 @@ const App = () => {
 
 
   //日期
-  const dateRange = (time) => {
+  const dateRange = (time: any[]) => {
     return time.map((timestamp, index) => {
       const formattedDate = moment(timestamp).format('MM-DD HH:mm');
       return (
@@ -62,7 +62,7 @@ const App = () => {
     });
   };
 
-  const submit = (item) => {
+  const submit = (item: any) => {
     console.log(item, 'submit');
   }
 
